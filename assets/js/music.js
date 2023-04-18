@@ -58,7 +58,7 @@ const app = {
         },
         {
             name: "Trên những đám mây",
-            singer: "Micheal Bubble",
+            singer: "Chillies",
             path: './assets/music/song6.mp3',
             image: './assets/img/song6.jfif'
         },
@@ -256,7 +256,7 @@ const app = {
         setTimeout(function () {
             $('.song.active').scrollIntoView({
                 behavior: 'smooth',
-                block: (app.currentIndex < 3 ? 'center' : 'nearest') //3 is a random number
+                block: (app.currentIndex < 4 ? 'center' : 'nearest') //3 is a random number
             });
         }, 300)
     }
@@ -277,6 +277,7 @@ const app = {
         }
         this.loadCurrentSong();
         this.render();
+        this.scrollToActiveSong();
     },
     playRandomSong: function () {
         let newIndex
@@ -286,6 +287,7 @@ const app = {
         this.currentIndex = newIndex;
         this.loadCurrentSong();
         this.render();
+        this.scrollToActiveSong();
     }
     ,
     start: function () {

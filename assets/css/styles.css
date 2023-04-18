@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #545ec8;
+    --primary-color: #8d95e9;
     --text-color: #333;
 }
 
@@ -10,9 +10,8 @@
 }
 
 body {
-    background-color: #bdd4e7;
-    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
-
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 html {
@@ -116,7 +115,7 @@ header h2 {
 .control .btn-toggle-play {
     width: 56px;
     height: 56px;
-    border-radius: 50%;
+    border-radius: 10%;
     font-size: 24px;
     color: #fff;
     display: flex;
@@ -129,7 +128,7 @@ header h2 {
     width: 100%;
     -webkit-appearance: none;
     height: 6px;
-    background: #d3d3d3;
+    background: #ffffff;
     outline: none;
     opacity: 0.7;
     -webkit-transition: 0.2s;
@@ -141,6 +140,7 @@ header h2 {
     appearance: none;
     width: 12px;
     height: 6px;
+    border-radius: 10%;
     background-color: var(--primary-color);
     cursor: pointer;
 }
